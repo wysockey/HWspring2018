@@ -12,7 +12,7 @@ Me96 = 20.0
 dank69 = Me69 / Me96
 
 #String
-print(dank69)
+print("dank69")
 
 #boolean
 
