@@ -6,7 +6,7 @@ a = input(" ")
 
 AreaOfSqaure = a * a
 AreaOfTriangle = 0.430 * a * a
-AreaOfPentagon = 
+#AreaOfPentagon = 
 
 
 print (AreaOfSqaure +  "is the area of the sqaure.")
