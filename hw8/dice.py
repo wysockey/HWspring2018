@@ -1,4 +1,4 @@
-#Dice.py
+#Dice.py EA SPORTS ITS IN THE GAME.
 ''''
 Create a dice rolling game. The game has players take turns rolling a 6 sided dice
 , where the higher number is the winner of the round. The game is won by best 2 of 3 matches.
@@ -13,50 +13,47 @@ determineWinnerRound
 -Returns: the name of the player that won the round
 determineWinnerGame
 -Parameters:score1,score2
--Returns: the name of the player that won the game, if any
+-Returns: the name of the player that won the game
+
 ''''
 
 
 
 
-[1,6]
-x = int(raw_input("enter a number"))
-y = 10
-
-
-print(x,y)
-#swaps
-def swap(first,second):
-        z = first
-        first = second
-        second = z
-
-
-#endswap
-swap(x,y)
-
-print (x,y)
 
 
 
-import swap
-
-ten=10
-fifteen=15
-print(x,y)
-print(swap.swap(x,y))
+#Restart homework cause my attempts will end up in  anime hell
+import random 
 
 
-nums = [1,2,3,4,5,6]
-x= 0
-while(x < len(nums)):
-        print(x,nums[x])
-        x = x+1
-        if(num[x]>num[x+1]):
-                swap.swap(num[x],num[x+1])
+score1 =0
+score2 =0
+rollresult1= 0
+rollresult2= 0
+range = [1,6]
+ledger = []
+def determineroll(begin, end):
+	return random.randint beginning,end
+	if( score1 > score2) print("Play one won")
+	elif(score1 < score2)print("Player two won")
+	else(score1 = score2)print ("Tie")
+def determineWinnerOfRound(end, addscore):
+	return highest number
+ if( score1 > score2) print("Play one won")
+        elif(score1 < score2)print("Player two won")
+        else(score1 = score2)print ("Tie")
+
+
+def determinedWinnerOfGame(end):
+	return score + 2 +3
+	 if( rollresult1  > rollresult2) print("Play one won")
+        elif(rollresult1 < rollresult2)print("Player two won")
+        else(score1 = score2)print ("Tie")
 
 
 
-print(nums)
-print(nums)
-print(nums)
+
+
+
+#How many each has?
