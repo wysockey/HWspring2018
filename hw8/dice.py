@@ -5,9 +5,9 @@
 import random
 
 
-anime1 = raw_input("What is weeb 1's  name!")
+alan1 = raw_input("What is player 1's  name!")
 
-anime2 = raw_input("What is weeb 2's  name!")
+remedy2 = raw_input("What is player 2's  name!")
 
  
 
@@ -63,11 +63,11 @@ def RoundWinner(rollresult1,rollresult2):
 
         if(rollresult1 > rollresult2):
 
-                return (anime1) + " loses this round!"
+                return (alan1) + " loses this round!"
 
         elif(rollresult2 > rollresult1):
 
-                return (anime2) + " loses this Round!"
+                return (remedy2) + " loses this Round!"
 
         else:
 
@@ -77,22 +77,21 @@ def GameWinner(score1,score2):
 
         if(score1 > score2):
 
-                return (anime1) + " loses this game!"
+                return (alan1) + " loses this game!"
 
         elif(score2 > score1):
 
-                return (anime2) + " loses this game!"
+                return (remedy2) + " loses this game!"
 
         else:
 
                 return "No winner!"
 
 def GameOver(rollresult):
-	if(rollresult = [20,40,60,80,100]):
-		return "You All Lose"
-	elif rollresult == 20 or rollresult == 40 or rollresult == 60 or rollresult == 80 or rollresult == 100
-	if true print "Game Over"
-	if false print "Game Countinues"
+	if (rollresult == 20.0 or rollresult == 40.0 or rollresult == 60.0 or rollresult == 80.0 or rollresult == 100.0):	
+		return  "you all lose"
+	else:
+		return "countinue the game"
 
 
 
@@ -117,7 +116,7 @@ while(gamerun >= 0):
 
         rollwin = RoundWinner(rollresult1,rollresult2)
 
-        elif(rollresult1 > rollresult2):
+        if(rollresult1 > rollresult2):
 
                 score1 += 1
 
