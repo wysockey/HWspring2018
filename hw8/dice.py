@@ -15,21 +15,21 @@ begin = 1.0
 
 end = 100.0 
 
-weeb1 = (begin * 0.50 ,end * 0.50)
+weeb1 = (begin,end)
 
-weeb2 = (begin * 0.50 ,end *  0.50)
+weeb2 = (begin,end)
 
-weeb3 = (begin * 0.50,end  * 0.50 )
+weeb3 = (begin,end)
 
-weeb4 = (begin * 0.50 ,end  * 0.50)
+weeb4 = (begin,end)
 
-weeb5 = (begin * 0.50,end * 0.50)
+weeb5 = (begin,end)
 
-weeb6 = (begin * 0.50,end * 0.50)
+weeb6 = (begin,end)
 
-weeb7 = (begin * 0.50,end  * 0.50)
+weeb7 = (begin,end)
 
-weeb8 = (begin * 0.50,end * 0.50)
+weeb8 = (begin,end)
 
  
 
@@ -87,13 +87,12 @@ def GameWinner(score1,score2):
 
                 return "No winner!"
 
-def GameOver(rollresult1,rollresult2):
-	if(rollresult1 = [20,40,60,80,100]):
-		return(anime1) + "You All Lose"
-
-	elif (rollresult2 = [20,40,60,80,100]):
-		return(anime2) + "You All Lose"
-
+def GameOver(rollresult):
+	if(rollresult = [20,40,60,80,100]):
+		return "You All Lose"
+	elif rollresult == 20 or rollresult == 40 or rollresult == 60 or rollresult == 80 or rollresult == 100
+	if true print "Game Over"
+	if false print "Game Countinues"
 
 
 
@@ -106,12 +105,19 @@ gamerun = 3
 while(gamerun >= 0):
 
         rollresult1 = roll(begin,end)
+	if(GameOver(rollresult1) == "You All Lose"):
+		gamerun =-1
+		print("Player 1 has lost" , rollresult," was rolled")
+	
+	elif(GameOver(rollresult2) ==  "You All Lose"):
+		gamerun =-1
+		print("Player 2 has lost", rollresult, " was rolled")
 
         rollresult2 = roll(begin,end)
 
         rollwin = RoundWinner(rollresult1,rollresult2)
 
-        if(rollresult1 > rollresult2):
+        elif(rollresult1 > rollresult2):
 
                 score1 += 1
 
@@ -124,7 +130,7 @@ while(gamerun >= 0):
         print(rollresult1,rollresult2,rollwin)
  
 
-gamewin = GameWinner(score1,score2)
+gamewin = GameWinner(score1 * 0.50 ,score2 * 0.50)
  
 
 print(gamewin)
